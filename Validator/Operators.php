@@ -2,6 +2,8 @@
 
 namespace Validator;
 
+use Validator\Operator\Invalid;
+
 use Operator;
 
 class Operators 
@@ -37,6 +39,6 @@ class Operators
                 return $operator;
             }
         }
-        return null;
+        return new Invalid();
     }
 }

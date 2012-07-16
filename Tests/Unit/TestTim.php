@@ -19,7 +19,8 @@ class TestTim extends \PHPUnit_Framework_TestCase
     
     public function testShouldReturnFalseForProvidedNumber()
     {
-        $this->assertNull($this->operators->getOperatorByPhoneNumber(24200066));
+        $operator = $this->operators->getOperatorByPhoneNumber(24200066);
+        $this->assertFalse($operator->isValid());
     }
     
     public function testShouldReturn9DigitForProvidedNumber()

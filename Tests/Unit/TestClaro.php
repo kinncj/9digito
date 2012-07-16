@@ -19,7 +19,8 @@ class TestClaro extends \PHPUnit_Framework_TestCase
     
     public function testShouldReturnFalseForProvidedNumber()
     {
-        $this->assertNull($this->operators->getOperatorByPhoneNumber(41680066));
+        $operator = $this->operators->getOperatorByPhoneNumber(41680066);
+        $this->assertFalse($operator->isValid());
     }
     
     public function testShouldReturn9DigitForProvidedNumber()

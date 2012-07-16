@@ -19,7 +19,8 @@ class TestNextel extends \PHPUnit_Framework_TestCase
     
     public function testShouldReturnFalseForProvidedNumber()
     {
-        $this->assertNull($this->operators->getOperatorByPhoneNumber(43990066));
+        $operator = $this->operators->getOperatorByPhoneNumber(43990066);
+        $this->assertFalse($operator->isValid());
     }
     
     public function testShouldReturn9DigitForProvidedNumber()

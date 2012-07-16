@@ -14,36 +14,42 @@ class TestOperator extends \PHPUnit_Framework_TestCase
     public function testShouldReturnTimOperator()
     {
         $operator = $this->operators->getOperatorByPhoneNumber(64290088);
-        $this->assertInstanceOf("Validator\\Operator\\Tim", $operator);
+        $this->assertEquals("Tim", $operator->getName());
     }
 
     public function testShouldReturnVivoOperator()
     {
         $operator = $this->operators->getOperatorByPhoneNumber(50203344);
-        $this->assertInstanceOf("Validator\\Operator\\Vivo", $operator);
+        $this->assertEquals("Vivo", $operator->getName());
     }
 
     public function testShouldReturnOiOperator()
     {
         $operator = $this->operators->getOperatorByPhoneNumber(52523344);
-        $this->assertInstanceOf("Validator\\Operator\\Oi", $operator);
+        $this->assertEquals("Oi", $operator->getName());
     }
 
     public function testShouldReturnClaroOperator()
     {
         $operator = $this->operators->getOperatorByPhoneNumber(61689988);
-        $this->assertInstanceOf("Validator\\Operator\\Claro", $operator);
+        $this->assertEquals("Claro", $operator->getName());
     }
 
     public function testShouldReturnNextelOperator()
     {
         $operator = $this->operators->getOperatorByPhoneNumber(53999988);
-        $this->assertInstanceOf("Validator\\Operator\\Nextel", $operator);
+        $this->assertEquals("Nextel", $operator->getName());
     }
 
     public function testShouldReturnAeiouOperator()
     {
         $operator = $this->operators->getOperatorByPhoneNumber(79090066);
-        $this->assertInstanceOf("Validator\\Operator\\Aeiou", $operator);
+        $this->assertEquals("Aeiou", $operator->getName());
+    }
+
+    public function testShouldReturnInvalidOperator()
+    {
+        $operator = $this->operators->getOperatorByPhoneNumber(22222222);
+        $this->assertEquals("Invalid Operator", $operator->getName());
     }
 }

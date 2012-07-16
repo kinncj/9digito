@@ -19,7 +19,8 @@ class TestAeiou extends \PHPUnit_Framework_TestCase
     
     public function testShouldReturnFalseForProvidedNumber()
     {
-        $this->assertNull($this->operators->getOperatorByPhoneNumber(49090066));
+        $operator = $this->operators->getOperatorByPhoneNumber(49090066);
+        $this->assertFalse($operator->isValid());
     }
     
     public function testShouldReturn9DigitForProvidedNumber()

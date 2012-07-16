@@ -19,7 +19,8 @@ class TestOi extends \PHPUnit_Framework_TestCase
     
     public function testShouldReturnFalseForProvidedNumber()
     {
-        $this->assertNull($this->operators->getOperatorByPhoneNumber(72520066));
+        $operator = $this->operators->getOperatorByPhoneNumber(72520066);
+        $this->assertFalse($operator->isValid());
     }
     
     public function testShouldReturn9DigitForProvidedNumber()
