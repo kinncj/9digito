@@ -30,7 +30,7 @@ Exemplo
 Instalação
 ======
 
-Composer
+Composer - * _Use with composer autoloader!_ *
 ============
 	{
 	"require": {
