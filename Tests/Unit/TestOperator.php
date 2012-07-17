@@ -1,7 +1,7 @@
 <?php
 require_once ('PHPUnit/Framework/TestCase.php');
 require_once ('bootstrap.php');
-use Validator\Operators;
+use NonoDigito\Validator\Operators;
 class TestOperator extends \PHPUnit_Framework_TestCase 
 {
     private $operators;
