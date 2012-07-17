@@ -12,7 +12,7 @@ Exemplo
 
 	<?php
 
-	use Validator\Operators;
+	use NonoDigito\Validator\Operators;
 
    	$operators = new Operators();
 
