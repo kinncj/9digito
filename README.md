@@ -5,7 +5,7 @@ Validação de números de celular para o 9 digito de SP
 
 Baseado nas regras definidas em [Teleco](http://www.teleco.com.br/num_cel.asp)
 
-Toda contribuição é bem vinda, bem como para as regras excessivas e melhorisa
+Toda contribuição é bem vinda, bem como para as regras excessivas e melhorias
 
 Exemplo
 ======
