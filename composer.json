@@ -1,0 +1,24 @@
+{
+    "name": "NonoDigito/NonoDigito",
+    "type": "library",
+    "description": "9Digit library to São Paulo state/Brazil",
+    "keywords": ["nono digito","9 digito"],
+    "homepage": "http://github.com/kinncj/9digito",
+    "license": "Copyright",
+    "authors": [
+        {
+            "name": "kinn Coelho Julião",
+            "email": "kinncj@gmail.com",
+            "homepage": "http://kinncj.com.br",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0"
+    },
+    "autoload": {
+        "psr-0": {
+            "NonoDigito": "NonoDigito/"
+        }
+    }
+}
