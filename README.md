@@ -27,6 +27,22 @@ Exemplo
    	echo 'Operadora: '.$operator->getName();
    	
    	
+Instalação
+======
+
+Composer
+============
+	{
+	"require": {
+		"kinncj/nonodigito": "dev-master"
+		}
+	}
+
+Git clone
+============
+	git clone https://github.com/kinncj/9digito.git yourVendorDir
+
+
 License Information
 ===================
 
